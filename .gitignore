@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment
+venv/
+env/
+.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Static Outputs
+*.png
+*.csv
+*.json
+
+# Exceptions to static outputs (if we wanted to keep sample outputs)
+# !sample_output.json
+
+# Streamlit
+.streamlit/

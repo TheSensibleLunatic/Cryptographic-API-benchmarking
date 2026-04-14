@@ -1,0 +1,22 @@
+# maravell-crypto-bench requirements
+
+# Dashboard & Interactive UI
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# Data Analysis & Static Plotting
+pandas>=2.0.0
+matplotlib>=3.8.0
+numpy>=1.24.0
+
+# System Metrics
+psutil>=5.9.0
+
+# CLI
+rich>=13.7.0
+
+# Testing & Code Quality
+pytest>=8.0.0
+pytest-cov>=4.1.0
+black>=24.2.0
+flake8>=7.0.0
