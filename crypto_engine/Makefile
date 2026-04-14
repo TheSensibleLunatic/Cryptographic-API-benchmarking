@@ -1,5 +1,5 @@
 # =============================================================================
-# Makefile — marvell-crypto-bench C shared library
+# Makefile — crypto-bench C shared library
 #
 # Targets:
 #   make all    — Build libcryptobench.so (default)

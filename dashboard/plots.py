@@ -2,7 +2,7 @@
 dashboard/plots.py — Static Matplotlib plot generators
 
 Generates publication-quality plots (300 DPI, dark_background style,
-Marvell-inspired palette) from a BenchSession.
+premium palette) from a BenchSession.
 
 Functions:
     plot_throughput_vs_size(session, output_path) → saves throughput_vs_size.png
@@ -42,7 +42,7 @@ _FIG_SIZE = (10, 6)
 
 
 def _apply_dark_axes(ax: plt.Axes) -> None:
-    """Apply Marvell dark theme to a matplotlib Axes."""
+    """Apply dark theme to a matplotlib Axes."""
     ax.set_facecolor(PALETTE["bg_panel"])
     ax.figure.patch.set_facecolor(PALETTE["bg_dark"])
     ax.tick_params(axis="both", **_FONT_TICK)

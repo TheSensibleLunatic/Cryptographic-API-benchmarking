@@ -1,5 +1,5 @@
 """
-benchmarker/cli.py — Command-line interface for marvell-crypto-bench
+benchmarker/cli.py — Command-line interface for crypto-bench
 
 Usage examples:
 
@@ -56,7 +56,7 @@ DEFAULT_ITERATIONS = 1000
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="marvell-crypto-bench",
+        prog="crypto-bench",
         description=(
             "High-Concurrency Cryptographic API Benchmarking Tool\n"
             "AES-256-CBC and SHA-256 under variable data sizes and thread counts."
@@ -292,7 +292,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     console.print(
         Panel(
-            "[bold cyan]marvell-crypto-bench[/bold cyan]\n"
+            "[bold cyan]crypto-bench[/bold cyan]\n"
             f"Algo: [yellow]{args.algo}[/yellow] | Mode: [yellow]{args.mode}[/yellow] | "
             f"Threads: [yellow]{thread_counts}[/yellow]\n"
             f"Sizes: [yellow]{[f'{s:,}' for s in packet_sizes]}[/yellow] bytes | "

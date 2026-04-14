@@ -1,5 +1,5 @@
 """
-dashboard/app.py — Full Streamlit Dashboard for marvell-crypto-bench
+dashboard/app.py — Full Streamlit Dashboard for crypto-bench
 
 Tabs:
     1. Throughput Analysis  — MB/s vs packet size, saturation annotation
@@ -49,14 +49,14 @@ from dashboard.chart_helpers import (
 # ---------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="Marvell Crypto Bench",
+    page_title="Crypto Bench",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
 # ---------------------------------------------------------------------------
-# Custom CSS — Marvell dark theme
+# Custom CSS
 # ---------------------------------------------------------------------------
 
 st.markdown(
@@ -174,7 +174,7 @@ def render_sidebar() -> dict:
     """Render sidebar controls and return user configuration dict."""
     with st.sidebar:
         st.markdown(
-            "## ⚡ Marvell Crypto Bench",
+            "## ⚡ Crypto Bench",
         )
         st.markdown(
             "<p style='color:#8B949E;font-size:12px;margin-top:-8px;'>"
@@ -656,7 +656,7 @@ def _tab_throughput(session: BenchSession) -> None:
             <b>{format_bytes(sp.packet_size_bytes)}</b> with <b>{sp.thread_count} threads</b>,
             achieving <b>{sp.throughput_mbps:.1f} MB/s</b>.<br>
             Beyond this point, increasing packet size yields diminishing returns —
-            this is the software pipeline bottleneck consistent with Marvell's
+            this is the software pipeline bottleneck consistent with high-performance
             high-throughput hardware offload design philosophy.
             </div>""",
             unsafe_allow_html=True,
@@ -812,7 +812,7 @@ def main() -> None:
             <div style="font-size:2rem;">⚡</div>
             <div>
                 <h1 style="margin:0;font-size:1.8rem;font-weight:700;">
-                    Marvell Crypto Bench
+                    High-Concurrency Crypto Bench
                 </h1>
                 <p style="margin:0;color:#8B949E;font-size:13px;">
                     AES-256-CBC & SHA-256 · High-Concurrency · Saturation Analysis

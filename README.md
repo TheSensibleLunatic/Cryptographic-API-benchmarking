@@ -1,13 +1,13 @@
-# Marvell Crypto Bench
+# High-Concurrency Crypto Bench
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![C99](https://img.shields.io/badge/C-C99-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-![CI](https://github.com/marvell-bench/marvell-crypto-bench/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/TheSensibleLunatic/Cryptographic-API-benchmarking/actions/workflows/ci.yml/badge.svg)
 
-> *"In the era of 800Gb/s cloud connectivity, software bottlenecks hide deep in the pipeline. We don't just measure throughput; we find exactly where it breaks."*
+> *"In the era of high-speed cloud connectivity, software bottlenecks hide deep in the pipeline. We don't just measure throughput; we find exactly where it breaks."*
 
-**Marvell Crypto Bench** is a production-quality, high-concurrency cryptographic API benchmarking tool. It wraps pure C implementations of AES-256-CBC and SHA-256 with a concurrent Python harness to stress-test throughput under massive parallel load. Its primary goal is to definitively identify software saturation points — demonstrating the QA maturity aligned with high-performance throughput engineering.
+**High-Concurrency Crypto Bench** is a production-quality, high-concurrency cryptographic API benchmarking tool. It wraps pure C implementations of AES-256-CBC and SHA-256 with a concurrent Python harness to stress-test throughput under massive parallel load. Its primary goal is to definitively identify software saturation points — demonstrating the QA maturity aligned with high-performance throughput engineering.
 
 ## Architecture
 
@@ -30,7 +30,7 @@
 - **Concurrent Harness:** Supports both `threading` (stressing the Python GIL) and `multiprocessing` (bypassing the GIL for true parallelism).
 - **Saturation Detection:** Advanced first-derivative analysis to pinpoint exactly where marginal throughput gains drop below 10%.
 - **Interactive Dashboard:** Fully offline `Streamlit` dashboard with `Plotly` charts.
-- **Publication-Quality Plots:** Static `matplotlib` generators featuring a premium dark-theme aesthetic inspired by Marvell's brand palette.
+- **Publication-Quality Plots:** Static `matplotlib` generators featuring a premium dark-theme aesthetic.
 - **Strict Data Contracts:** JSON outputs perfectly adhere to a required rigid schema.
 
 ## Prerequisites
@@ -42,8 +42,8 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/marvell-bench/marvell-crypto-bench.git
-   cd marvell-crypto-bench
+   git clone https://github.com/TheSensibleLunatic/Cryptographic-API-benchmarking.git
+   cd Cryptographic-API-benchmarking
    ```
 
 2. **Compile the C library:**

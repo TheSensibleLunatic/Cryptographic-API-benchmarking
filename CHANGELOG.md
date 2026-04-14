@@ -14,6 +14,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Advanced packet sweep algorithms with 10% saturation point detection.
 - Full-featured `argparse` CLI with rich progress bars and tables.
 - Interactive offline `Streamlit` dashboard with `Plotly` graphs.
-- High-quality static `matplotlib` generators using complete Marvell dark theme palette.
+- High-quality static `matplotlib` generators using complete dark theme palette.
 - Extensive test suite covering FFI, concurrency logic, math, and plotting.
 - GitHub Actions CI pipeline and comprehensive project documentation.

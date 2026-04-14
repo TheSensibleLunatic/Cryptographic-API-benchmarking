@@ -2,7 +2,7 @@
 dashboard/chart_helpers.py — Shared chart utilities
 
 Provides:
-    - Marvell-inspired color palette constants
+    - Color palette constants
     - Saturation point detector (wraps packet_sweep.detect_saturation)
     - Axis formatters for ns and MB/s units
     - Color-per-thread-count helper
@@ -13,13 +13,13 @@ from __future__ import annotations
 from typing import Optional
 
 # ---------------------------------------------------------------------------
-# Marvell-inspired color palette
+# Dark theme color palette
 # ---------------------------------------------------------------------------
 
 PALETTE = {
-    "primary": "#0057B8",      # Marvell deep blue
+    "primary": "#0057B8",      # Deep blue
     "accent_cyan": "#00C8E0",  # Electric cyan
-    "accent_orange": "#FF6B00",  # Marvell orange
+    "accent_orange": "#FF6B00",  # Bright orange
     "success": "#00D48A",      # Teal green
     "warning": "#FFD600",      # Amber
     "danger": "#FF3B30",       # Alert red
@@ -107,7 +107,7 @@ def find_saturation_point(results: list) -> Optional[object]:
 
 
 def plotly_dark_layout(title: str = "", height: int = 450) -> dict:
-    """Return a dark-theme Plotly layout dict matching Marvell palette."""
+    """Return a dark-theme Plotly layout dict matching the palette."""
     return {
         "title": {
             "text": title,

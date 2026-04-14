@@ -1,4 +1,4 @@
-# Contributing to Marvell Crypto Bench
+# Contributing to Crypto Bench
 
 Thank you for your interest in improving this tool!
 
